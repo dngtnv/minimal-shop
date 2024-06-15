@@ -1,8 +1,8 @@
 import { Suspense } from 'react';
 import { Await, defer, useLoaderData } from 'react-router-dom';
 import Banner from '../components/Banner.jsx';
-import Cta from '../components/CTA.jsx';
 import Categories from '../components/Categories.jsx';
+import Cta from '../components/Cta.jsx';
 import TopProduct from '../components/Product/TopProduct.jsx';
 import { getProductList } from '../utils/loaders.js';
 

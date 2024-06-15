@@ -1,4 +1,4 @@
-import styles from './CTA.module.css';
+import styles from './Cta.module.css';
 
 const Cta = () => {
   return (
