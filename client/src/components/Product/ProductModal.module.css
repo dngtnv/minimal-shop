@@ -1,0 +1,73 @@
+.modal-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: max(60%, 500px);
+  height: 70%;
+}
+
+.modal-wrapper::backdrop {
+  background-color: #5a5a5a6a;
+  position: fixed;
+  inset: 0;
+}
+
+.modal-wrapper .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #797979;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.product-text {
+  padding: 0 2rem;
+  color: #3d3d3d;
+  font-style: italic;
+}
+
+.product-text .product-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.product-text .product-price {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.product-text .product-desc {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #858585;
+  line-height: 1.8;
+  margin: 1rem 0;
+}
+
+.product-text a {
+  background-color: #383838;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    grid-template-columns: 1fr;
+  }
+}

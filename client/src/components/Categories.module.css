@@ -1,0 +1,43 @@
+.categories-wrapper {
+  padding: 2rem 0;
+}
+
+.categories-header {
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.categories-header p {
+  color: #9e9e9e;
+  font-size: 14px;
+  margin-bottom: 0.45rem;
+}
+
+.categories-header h2 {
+  font-size: 1.35rem;
+}
+
+.categories-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.categories-body .first-row {
+  flex-basis: calc((100% - 1.25rem) / 2);
+}
+
+.categories-body .second-row {
+  flex-basis: calc((100% - 2.5rem) / 3);
+}
+
+.categories-body img {
+  transition: all 0.2s ease;
+}
+
+.categories-body img:hover {
+  filter: opacity(0.7);
+}

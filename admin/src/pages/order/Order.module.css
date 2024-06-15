@@ -1,0 +1,13 @@
+#order-wrapper {
+  --sidebar-width: 250px;
+  margin-left: var(--sidebar-width);
+  padding: 1rem;
+}
+
+.view-btn {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #22ca80;
+  color: white;
+  cursor: pointer;
+}

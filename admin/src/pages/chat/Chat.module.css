@@ -1,0 +1,152 @@
+#chat-wrapper {
+  --sidebar-width: 250px;
+  margin-left: var(--sidebar-width);
+  padding: 1rem;
+}
+
+.chat-top {
+  margin-bottom: 1rem;
+}
+
+.chat-top h1 {
+  font-weight: 600;
+}
+
+.chat-top p {
+  font-size: 0.9rem;
+  color: #a2adc7;
+}
+
+.chat-main {
+  display: flex;
+  height: 100vh;
+  border: 1px solid #e0e0e0;
+}
+
+.chat-main .chat-sidebar {
+  flex-basis: 230px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.chat-main .chat-content {
+  flex-grow: 1;
+}
+
+.chat-sidebar .chat-search {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.chat-search input {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+}
+
+.chat-search input::placeholder {
+  color: #97a1af;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0.4rem;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.chat-item {
+  font-size: 0.9rem;
+  color: #a2adc7;
+}
+
+.chat-body {
+  padding: 1rem;
+  overflow-y: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-body-top {
+  flex: 1;
+}
+
+.chat-body-bottom {
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  padding: 0.7rem 0.5rem;
+}
+
+.chat-body-bottom input {
+  border: none;
+  padding: 1rem;
+  font-size: 0.9rem;
+  width: 90%;
+}
+
+.chat-body-bottom input:focus {
+  outline: none;
+}
+
+.chat-body-bottom input::placeholder {
+  color: #97a1af;
+}
+
+.chat-message {
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.chat-message-right,
+.chat-message-left {
+  display: flex;
+}
+
+.chat-message-right {
+  justify-content: flex-end;
+}
+
+.chat-avatar {
+  width: 32px;
+  aspect-ratio: 1/1;
+  margin-right: 12px;
+}
+
+.chat-avatar img {
+  object-fit: none;
+  border-radius: 50%;
+}
+
+.chat-message-text {
+  width: fit-content;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 0.975rem;
+}
+
+.chat-message-right > .chat-message-text {
+  background-color: #48b0f7;
+  color: #fff;
+}
+
+.chat-message-left > .chat-message-text {
+  background-color: #f5f6f7;
+  color: #74777a;
+}
+
+.send-btn {
+  border: none;
+  background-color: #01caf1;
+  border-radius: 50%;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.send-btn svg {
+  color: #fff;
+  transform: rotate(-45deg);
+  translate: 2.5px -2.5px;
+}

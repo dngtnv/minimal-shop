@@ -1,0 +1,73 @@
+.info-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-item {
+  width: min(100%, 300px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.info-item h2 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #828282;
+}
+
+.info-item p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.info-item .info-icon {
+  width: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #828282;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.info-users {
+  --color: 255 56 56;
+  background-color: rgba(var(--color) / 0.3);
+}
+
+.info-users svg {
+  color: rgb(var(--color));
+}
+
+.info-orders {
+  --color: 184 132 65;
+  background-color: rgba(var(--color) / 0.3);
+}
+
+.info-orders svg {
+  color: rgb(var(--color));
+}
+
+.info-earnings {
+  --color: 34 135 12;
+  background-color: rgba(var(--color) / 0.3);
+}
+
+.info-earnings svg {
+  color: rgb(var(--color));
+}
+
+.info-balance {
+  --color: 114 15 163;
+  background-color: rgba(var(--color) / 0.3);
+}
+
+.info-balance svg {
+  color: rgb(var(--color));
+}

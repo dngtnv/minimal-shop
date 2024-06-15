@@ -1,0 +1,65 @@
+#addnew-wrapper {
+  --sidebar-width: 250px;
+  margin-left: var(--sidebar-width);
+  padding: 1rem;
+  background-color: #f9fbfd;
+}
+
+#addnew-wrapper h1 {
+  font-size: 1.2rem;
+  color: rgb(183, 183, 183);
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 3px;
+}
+
+.form-wrapper {
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 3px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-control label {
+  color: #828da4;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+.form-control select {
+  padding: 0.5rem;
+  border: 2px solid #b2c0ce;
+}
+
+.form-control input::placeholder,
+.form-control textarea::placeholder {
+  color: #8d99a5;
+}
+
+.form-control textarea {
+  padding: 0.5rem;
+  border: 2px solid #b2c0ce;
+}
+
+.form-control input[name='images'] {
+  border: none;
+  color: #828da4;
+}
+
+.btn {
+  padding: 0.5rem 2.5rem;
+  background-color: #5f76e8;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 1rem 0;
+}

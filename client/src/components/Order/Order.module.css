@@ -1,0 +1,60 @@
+.history-wrapper {
+  padding: 3rem 0;
+}
+
+.history-wrapper h1 {
+  font-size: 1.525rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.history-body {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.order-table {
+  margin-bottom: 1rem;
+}
+
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  table-layout: auto;
+}
+
+.order-table thead {
+  background-color: #f8f9fa;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.order-table thead th {
+  padding: 0.6rem 0.7rem;
+  font-size: 1rem;
+}
+
+.order-table tbody tr {
+  font-size: 16px;
+  height: 115px;
+  color: #8f9294;
+}
+
+.order-table tbody tr td {
+  padding: 0.6rem 0.7rem;
+}
+
+.order-table tbody tr td .btn {
+  padding: 10px 15px;
+  border: 2px solid #000000;
+  text-wrap: nowrap;
+}
+
+.order-table tbody tr td .btn svg {
+  margin-left: 5px;
+}

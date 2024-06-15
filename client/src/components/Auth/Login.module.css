@@ -1,0 +1,79 @@
+.login-wrapper {
+  background-color: #fff;
+  background-image: url('/src/assets/banner1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 3rem 0;
+}
+
+.login-form {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  max-width: 500px;
+  margin-inline: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem 3rem;
+}
+
+.login-form h1 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+.login-form form {
+  width: 100%;
+  margin: 2.125rem 0;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+
+.login-form input:focus,
+.login-form input:active {
+  outline: none;
+}
+
+.login-form input::placeholder {
+  color: #888;
+}
+
+.login-form .signup-btn {
+  width: 100%;
+  padding: 1.4rem 1.8rem;
+  margin: 1rem 0;
+  background-color: #494949;
+  border: none;
+  color: #cfcfcf;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-form .form-footer p {
+  color: #888;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.login-form .form-footer span {
+  color: #6688d2;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.error-msg {
+  color: #d93636;
+}

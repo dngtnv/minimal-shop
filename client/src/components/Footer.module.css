@@ -1,0 +1,37 @@
+.footer {
+  background-color: #111111;
+  padding: 4rem 2rem;
+}
+
+.footer-content {
+  max-width: 1028px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.footer-col ul > li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: #605f5f;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

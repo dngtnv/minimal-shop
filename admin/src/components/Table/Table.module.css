@@ -1,0 +1,31 @@
+.table-wrapper {
+  padding: 2rem 1.525rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 3px;
+}
+
+.table-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.table-title {
+  color: rgb(126, 126, 126);
+}
+
+.outline-btn {
+  background-color: #fff;
+  font-size: 1rem;
+  color: #2cda0e;
+  padding: 4px 6px;
+  border: 1px solid #2cda0e;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.outline-btn:hover {
+  background-color: #2cda0e;
+  color: #fff;
+}

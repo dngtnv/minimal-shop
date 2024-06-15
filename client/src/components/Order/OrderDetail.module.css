@@ -1,0 +1,60 @@
+.detail-wrapper {
+  padding: 3rem 0;
+}
+
+.detail-wrapper h2 {
+  font-size: 1.525rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.detail-body {
+  padding: 1rem 2rem;
+}
+
+.detail-text {
+  font-size: 15px;
+  color: #8f9294;
+  font-style: italic;
+  line-height: 2;
+}
+
+.detail-table {
+  margin-top: 2rem;
+}
+
+.detail-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  table-layout: auto;
+}
+
+.detail-table thead {
+  background-color: #f8f9fa;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.detail-table thead th {
+  padding: 0.6rem 0.7rem;
+  font-size: 1rem;
+}
+
+.detail-table tbody tr {
+  height: 115px;
+}
+
+.detail-table tbody tr td {
+  padding: 0.6rem 0.7rem;
+}
+
+.product-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}

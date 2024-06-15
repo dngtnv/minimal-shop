@@ -1,0 +1,38 @@
+.product-img img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-weight: 500;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.product-price,
+.product-total {
+  font-size: 0.875rem;
+  color: #888;
+  font-style: italic;
+}
+
+.product-quantity {
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+.product-quantity:focus,
+.product-quantity:active {
+  outline: none;
+}
+
+.remove-btn {
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}

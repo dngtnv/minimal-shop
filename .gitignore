@@ -1,0 +1,71 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Dependency directories
+admin/node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production build directories
+admin/build/
+client/build/
+server/dist/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REACT_PROJECT cache
+.cache
+
+# dotenv environment variable files
+.env
+.env.*.local
+
+# Next.js build output
+.next/
+
+# SvelteKit build output
+.svelte-kit/
+
+# Vuepress build output
+.vuepress/dist/
+
+# Nuxt.js build output
+.nuxt/
+
+# Gatsby files
+.cache/
+
+# Uncomment if using \`gatsby-background-image\` plugin
+# https://www.gatsbyjs.com/plugins/gatsby-background-image/
+# static/
+# cache/
+
+# Emacs
+*~
+\#*\#
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# VS Code
+.vscode/

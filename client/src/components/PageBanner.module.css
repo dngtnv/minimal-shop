@@ -1,0 +1,23 @@
+.banner-wrapper {
+  padding: 5rem 2.125rem;
+  background-color: #f8f9fa;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.banner-content .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #363535;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  color: #8f9294;
+}

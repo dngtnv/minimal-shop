@@ -1,0 +1,162 @@
+.chat-wrapper {
+  position: fixed;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  animation: showUp 0.4s ease-out;
+}
+
+.chat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #e4e7ea;
+}
+
+.chat-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.right-text {
+  background-color: #e4e7ea;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #6c6e71;
+}
+
+.right-text:hover {
+  background-color: #d4d7da;
+  cursor: pointer;
+}
+
+.chat-body {
+  height: 350px;
+  padding: 0 1rem;
+  overflow-y: auto;
+}
+
+.chat-message {
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.chat-message-right,
+.chat-message-left {
+  display: flex;
+}
+
+.chat-message-right {
+  justify-content: flex-end;
+}
+
+.chat-avatar {
+  width: 32px;
+  aspect-ratio: 1/1;
+  margin-right: 12px;
+}
+
+.chat-avatar img {
+  object-fit: none;
+  border-radius: 50%;
+}
+
+.chat-message-text {
+  width: fit-content;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 0.975rem;
+}
+
+.chat-message-right > .chat-message-text {
+  background-color: #48b0f7;
+  color: #fff;
+}
+
+.chat-message-left > .chat-message-text {
+  background-color: #f5f6f7;
+  color: #74777a;
+}
+
+.chat-footer {
+  background-color: #f9fafb;
+  border-top: 1px solid #e4e7ea;
+}
+
+.chat-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.chat-control input {
+  font-size: 0.975rem;
+  background-color: #fff;
+  border: none;
+}
+
+.chat-control input:focus,
+.chat-control input:active {
+  outline: none;
+}
+
+.chat-control input::placeholder {
+  color: #74777a;
+}
+
+.chat-control button {
+  background-color: transparent;
+  color: #cac7c7;
+  margin: 0 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-control button:last-child {
+  color: #48b0f7;
+}
+
+@keyframes showUp {
+  0% {
+    transform: rotate(45deg);
+    translate: 0 -50%;
+    scale: 0.5;
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(-15deg);
+    translate: 0 -50%;
+    scale: 0.8;
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(0deg);
+    translate: 0 -50%;
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chat-wrapper {
+    left: 50%;
+    right: -100px;
+    transform: translate(-50%, -50%);
+  }
+
+  .chat-control {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

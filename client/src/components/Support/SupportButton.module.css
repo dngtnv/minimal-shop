@@ -1,0 +1,15 @@
+.support-btn-wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.support-btn {
+  width: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #515653;
+  color: #fff;
+}

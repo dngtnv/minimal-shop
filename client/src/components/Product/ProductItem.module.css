@@ -1,0 +1,28 @@
+.product-item {
+  text-align: center;
+}
+
+.product-info {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.product-info h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.product-info p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.product-item img {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-item img:hover {
+  filter: opacity(0.7);
+}

@@ -1,0 +1,32 @@
+header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.headerWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1580px;
+  padding: 1.25rem 5rem;
+}
+
+.navbarTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarTop .logo {
+  cursor: pointer;
+}
+
+.logo a {
+  color: #4c13bd;
+  font-weight: 700;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
