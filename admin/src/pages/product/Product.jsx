@@ -31,7 +31,7 @@ const Product = () => {
   const handleDelete = async () => {
     // Use selectedId for the delete operation
     try {
-      const response = await fetch(`http://localhost:5000/admin/products/${selectedId}`, {
+      const response = await fetch(`https://minimal-shop.onrender.com/admin/products/${selectedId}`, {
         method: 'DELETE',
       });
 

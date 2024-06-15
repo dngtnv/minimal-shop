@@ -10,7 +10,7 @@ const OrderPage = () => {
 
   useEffect(() => {
     // Fetch orders from the server
-    fetch(`http://localhost:5000/orders/${userId}`, {
+    fetch(`https://minimal-shop.onrender.com/orders/${userId}`, {
       method: 'GET',
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'),

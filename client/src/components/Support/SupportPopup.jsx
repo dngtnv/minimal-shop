@@ -21,7 +21,7 @@ const ChatPopup = () => {
       // For now, just clear the input and return to prevent sending the message
       messageRef.current.value = '';
     }
-    const response = await fetch('http://localhost:5000/support/start', {
+    const response = await fetch('https://minimal-shop.onrender.com/support/start', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const ChatPopup = () => {
 
   useEffect(() => {
     // Setup socket connection to listen for messages
-    const socket = openSocket('http://localhost:5000');
+    const socket = openSocket('https://minimal-shop.onrender.com');
     socket.on('messages', (data) => {
       if (data.action === 'create') {
         if (!localStorage.getItem('roomId')) {
@@ -65,7 +65,7 @@ const ChatPopup = () => {
     // Fetch messages for the current room
     const fetchMessages = async () => {
       if (currentRoomId) {
-        const response = await fetch(`http://localhost:5000/support/messages/${currentRoomId}`);
+        const response = await fetch(`https://minimal-shop.onrender.com/support/messages/${currentRoomId}`);
         const data = await response.json();
         setMessages(data.messages);
       }

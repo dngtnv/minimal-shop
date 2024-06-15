@@ -28,7 +28,7 @@ const Checkout = () => {
     const address = addressRef.current.value;
 
     try {
-      const response = await fetch('http://localhost:5000/order', {
+      const response = await fetch('https://minimal-shop.onrender.com/order', {
         method: 'POST',
         withCredentials: true,
         headers: {

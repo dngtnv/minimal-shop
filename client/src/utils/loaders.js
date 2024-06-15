@@ -1,6 +1,6 @@
 export async function getProductList() {
   try {
-    const response = await fetch('http://localhost:5000/products');
+    const response = await fetch('https://minimal-shop.onrender.com/products');
 
     if (!response.ok) {
       throw new Error('Error loading products!');
@@ -15,7 +15,7 @@ export async function getProductList() {
 
 export async function getProductById(productId) {
   try {
-    const response = await fetch('http://localhost:5000/product/' + productId);
+    const response = await fetch('https://minimal-shop.onrender.com/product/' + productId);
 
     if (!response.ok) {
       throw new Error('Error loading product!');

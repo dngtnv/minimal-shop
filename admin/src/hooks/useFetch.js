@@ -7,7 +7,7 @@ export function useFetch(url) {
   useEffect(() => {
     if (!url) return;
     async function fetchData() {
-      const response = await fetch(`http://localhost:5000/${url}`);
+      const response = await fetch(`https://minimal-shop.onrender.com/${url}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

@@ -18,7 +18,7 @@ const Chat = () => {
   useEffect(() => {
     // Fetch list of chat rooms from your backend
     const fetchRooms = async () => {
-      const response = await fetch('http://localhost:5000/support/sessions');
+      const response = await fetch('https://minimal-shop.onrender.com/support/sessions');
       const data = await response.json();
       if (!data.sessions.length) {
         return;
@@ -34,7 +34,7 @@ const Chat = () => {
     // Fetch messages for the current room
     const fetchMessages = async () => {
       if (currentRoomId) {
-        const response = await fetch(`http://localhost:5000/support/messages/${currentRoomId}`);
+        const response = await fetch(`https://minimal-shop.onrender.com/support/messages/${currentRoomId}`);
         const data = await response.json();
         setMessages(data.messages);
       }
@@ -46,7 +46,7 @@ const Chat = () => {
   const handleSendMessage = async () => {
     const message = messageRef.current.value;
     if (message.trim() !== '' && currentRoomId) {
-      const response = await fetch(`http://localhost:5000/support/messages/${currentRoomId}`, {
+      const response = await fetch(`https://minimal-shop.onrender.com/support/messages/${currentRoomId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const Chat = () => {
 
   useEffect(() => {
     // Setup socket connection to listen for messages
-    const socket = openSocket('http://localhost:5000');
+    const socket = openSocket('https://minimal-shop.onrender.com');
     socket.on('messages', (data) => {
       if (data.action === 'create') {
         localStorage.setItem('roomId', data.roomId);

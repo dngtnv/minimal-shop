@@ -8,7 +8,7 @@ const OrderDetail = () => {
   const [order, setOrder] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/order-detail/${orderId}`, {
+    fetch(`https://minimal-shop.onrender.com/order-detail/${orderId}`, {
       method: 'GET',
       withCredentials: true,
       headers: {

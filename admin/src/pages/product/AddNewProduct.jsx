@@ -38,7 +38,7 @@ const AddNewProduct = ({ edit }) => {
         });
       }
 
-      const response = await fetch(`http://localhost:5000/admin/products/${edit ? productId : ''}`, {
+      const response = await fetch(`https://minimal-shop.onrender.com/admin/products/${edit ? productId : ''}`, {
         method: edit ? 'PUT' : 'POST',
         body: formData,
       });
@@ -57,7 +57,7 @@ const AddNewProduct = ({ edit }) => {
 
   useEffect(() => {
     if (edit) {
-      fetch(`http://localhost:5000/product/${productId}`)
+      fetch(`https://minimal-shop.onrender.com/product/${productId}`)
         .then((response) => response.json())
         .then((data) => setProduct(data.product));
     }
