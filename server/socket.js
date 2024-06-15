@@ -4,7 +4,7 @@ module.exports = {
   init: (httpServer) => {
     io = require('socket.io')(httpServer, {
       cors: {
-        origin: ['https://funixshop-client.netlify.app/', 'https://funixshop-admin.netlify.app/'],
+        origin: '*',
         methods: ['GET', 'POST'],
         credentials: true,
       },
