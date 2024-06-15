@@ -16,8 +16,8 @@ client/node_modules/
 server/node_modules/
 
 # Production build directories
-admin/build/
-client/build/
+admin/dist/
+client/dist/
 server/dist/
 
 # Optional npm cache directory
