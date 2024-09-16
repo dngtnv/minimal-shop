@@ -27,4 +27,6 @@ To get a local copy up and running follow these simple steps.
 
 ### DEMO
 
+- client: https://funixshop-client.netlify.app/
+- admin: https://funixshop-admin.netlify.app/
 - server: https://minimal-shop.onrender.com/
