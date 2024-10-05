@@ -2,12 +2,18 @@
   display: flex;
   gap: 2.125rem;
   padding: 1.125rem 0;
+  @media screen and (max-width: 376px) {
+    flex-direction: column;
+  }
 }
 
 .product-filter {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .product-filter input {
@@ -15,6 +21,10 @@
   padding: 0.6rem 0.825rem;
   border: 1px solid #bfbfbf;
   flex-basis: 260px;
+  @media screen and (max-width: 768px) {
+    flex: 0;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .product-filter input::placeholder {

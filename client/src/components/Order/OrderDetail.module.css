@@ -23,6 +23,7 @@
 
 .detail-table {
   margin-top: 2rem;
+  overflow-x: auto;
 }
 
 .detail-table table {

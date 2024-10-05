@@ -24,6 +24,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
+  @media screen and (max-width: 376px) {
+    gap: 1rem;
+    flex-direction: column;
+  }
 }
 
 .categories-body .first-row {
